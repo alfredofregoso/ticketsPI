@@ -8,6 +8,9 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { SignupPage } from '../pages/signup/signup';
+import { GenerarTicketPage } from '../pages/generar-ticket/generar-ticket';
+import { TicketAbiertoPage } from '../pages/ticket-abierto/ticket-abierto';
+import { TicketCerradoPage } from '../pages/ticket-cerrado/ticket-cerrado';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +31,10 @@ export class MyApp {
       //{ title: 'Login', component: LoginPage },
       //{ title: 'Signup', component: SignupPage },
       { title: 'Home', component: HomePage },
-      { title: 'Solucitudes', component: ListPage }
+      { title: 'Generar Ticket', component: GenerarTicketPage },
+      { title: 'Tickets Abiertos', component: TicketAbiertoPage },
+      { title: 'Tickets Cerrados', component: TicketCerradoPage }
+      
     ];
 
   }

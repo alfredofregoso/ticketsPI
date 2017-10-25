@@ -8,6 +8,9 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { SignupPage } from '../pages/signup/signup';
+import { GenerarTicketPage } from '../pages/generar-ticket/generar-ticket';
+import { TicketAbiertoPage } from '../pages/ticket-abierto/ticket-abierto';
+import { TicketCerradoPage } from '../pages/ticket-cerrado/ticket-cerrado';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +23,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     LoginPage,
     WelcomePage,
-    SignupPage
+    SignupPage,
+    GenerarTicketPage,
+    TicketAbiertoPage,
+    TicketCerradoPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     LoginPage,
     WelcomePage,
-    SignupPage
+    SignupPage,
+    GenerarTicketPage,
+    TicketAbiertoPage,
+    TicketCerradoPage
   ],
   providers: [
     StatusBar,
