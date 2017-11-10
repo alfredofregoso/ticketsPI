@@ -11,7 +11,8 @@ import { SignupPage } from '../pages/signup/signup';
 import { GenerarTicketPage } from '../pages/generar-ticket/generar-ticket';
 import { TicketAbiertoPage } from '../pages/ticket-abierto/ticket-abierto';
 import { TicketCerradoPage } from '../pages/ticket-cerrado/ticket-cerrado';
-
+import {Http, Headers } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,6 +30,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TicketCerradoPage
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
   ],

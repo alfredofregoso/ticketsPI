@@ -14,43 +14,43 @@
 
 
 <ion-content padding>
-	<ion-list>
-
+	<form [formGroup]="formgroup" (ngSubmit)="logForm()">
+		
 		<ion-item>
 			<ion-label fixed>Nombre</ion-label>
-			<ion-input type="text" value=""></ion-input>
+			<ion-input type="text" formControlName= "name"></ion-input>
 		</ion-item>
 
-		<ion-item>
-			<ion-label fixed>Usuario</ion-label>
-			<ion-input type="text" value=""></ion-input>
-		</ion-item>
 
 		<ion-item>
 			<ion-label fixed>Correo UCOL</ion-label>
-			<ion-input type="text" value=""></ion-input>
+			<ion-input type="text" formControlName= "email"></ion-input>
 		</ion-item>
 
 		<ion-item>
 			<ion-label fixed>Contraseña</ion-label>
-			<ion-input type="password"></ion-input>
+			<ion-input type="text" formControlName= "password"></ion-input>
 		</ion-item>
 
 		<ion-item>
 			<ion-label>Plantel/Dependencia</ion-label>
-			<ion-select [(ngModel)]="plantel">
+			<ion-select formControlName="plantel">
 				<ion-option value="1">Facultad de Telemática</ion-option>
 				<ion-option value="2">Facultad de Psicología</ion-option>
-				<ion-option value="3">Facultad de Mercadotecnia</ion-option>
+				<ion-option value="4">Facultad de Mercadotecnia</ion-option>
+				<ion-option value="5">Facultad de Medicina</ion-option>
+				<ion-option value="6">Facultad de Derecho</ion-option>
+				<ion-option value="7">Facultad de Enfermeria</ion-option>
+				<ion-option value="8">Facultad de Ciencias Políticas</ion-option>
+				<ion-option value="9">Facultad de Letras</ion-option>
+				<ion-option value="10">Facultad de Contabilidad</ion-option>
+				<ion-option value="90">Facultad de Administración</ion-option>
 				
 			</ion-select>
 		</ion-item>	
 
 			<button ion-button full color="success" (click)="signup()">Registrarse</button>
 
-			
-
-	</ion-list>	
-
+	</form>
 
 </ion-content>
