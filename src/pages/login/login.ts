@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import {Http, Headers, RequestOptions } from '@angular/http';
-import {Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+ import {Http, Headers, RequestOptions } from '@angular/http';
+// import {Observable } from 'rxjs/Observable';
 import { HttpModule } from '@angular/http';
-import {ActionSheetController} from 'ionic-angular';
-import {FormBuilder, FormGroup,FormControl, Validators, AbstractControl} from '@angular/forms';
+// import {ActionSheetController} from 'ionic-angular';
+ import {FormBuilder, FormGroup,FormControl, Validators, AbstractControl} from '@angular/forms';
+
 
 
 /**
@@ -23,17 +23,17 @@ import {FormBuilder, FormGroup,FormControl, Validators, AbstractControl} from '@
 })
 export class LoginPage {
 
-  form: FormData;
-  formgroup: FormGroup;
-  email: AbstractControl;
-  password: AbstractControl;
+  // form: FormData;
+  // formgroup: FormGroup;
+  // email: AbstractControl;
+  // password: AbstractControl;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public formbuilder: FormBuilder) {
 
-    this.formgroup = formbuilder.group({
-      email:['', Validators.compose([Validators.required])],
-      password:['', Validators.required],
-  });
+  //   this.formgroup = formbuilder.group({
+  //     email:['', Validators.compose([Validators.required])],
+  //     password:['', Validators.required],
+  // });
 
   }
 

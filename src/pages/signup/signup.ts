@@ -53,7 +53,7 @@ export class SignupPage {
   }
 
   emailValidator(control: FormControl): {[s: string]: boolean} {
-    if (!(control.value.toLowerCase().match('^[a-zA-Z]\\w*@ucol\\.mx$'))) {
+    if (!(control.value.toLowerCase().match('^[a-zA-Z]\\w*@ucol\\.mx$') || control.value.toLowerCase().match('^[a-zA-Z]\\w*@yahoo\\.com$'))) {
       return {invalidEmail: true};
     }
   }
