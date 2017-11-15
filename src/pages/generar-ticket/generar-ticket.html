@@ -21,12 +21,16 @@
         <ion-list>
             
             <ion-item>
-                <ion-label color="primary" floating>Pregunta</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
+                <ion-label color="primary" floating>Asunto</ion-label>
+                <ion-input type="text" [(ngModel)]="userData.ti_asunto"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label color="primary" floating>Pregunta</ion-label>
+              <ion-input  type="text" [(ngModel)]="userData.ti_pregunta"></ion-input>
+          </ion-item>
         </ion-list>    
         
         <div padding>
-            <button ion-button>Genera Ticket</button>
+            <button ion-button (click)="generarTicket()">Genera Ticket</button>
           </div>
 </ion-content>

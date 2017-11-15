@@ -13,28 +13,27 @@
 </ion-header>
 
 
-<ion-content padding>
-	<form [formGroup]="formgroup" (ngSubmit)="logForm()">
+<ion-content padding class="appBackground">
 		
-		<ion-item>
+		<ion-item> 
 			<ion-label fixed>Nombre</ion-label>
-			<ion-input type="text" formControlName= "name"></ion-input>
+			<ion-input type="text" [(ngModel)]="userData.us_nombre"></ion-input>
 		</ion-item>
 
 
 		<ion-item>
 			<ion-label fixed>Correo UCOL</ion-label>
-			<ion-input type="text" formControlName= "email"></ion-input>
+			<ion-input type="text" [(ngModel)]="userData.us_correo"></ion-input>
 		</ion-item>
 
 		<ion-item>
 			<ion-label fixed>Contraseña</ion-label>
-			<ion-input type="text" formControlName= "password"></ion-input>
+			<ion-input type="password" [(ngModel)]="userData.us_contrasena"></ion-input>
 		</ion-item>
 
 		<ion-item>
 			<ion-label>Plantel/Dependencia</ion-label>
-			<ion-select formControlName="plantel">
+			<ion-select [(ngModel)]="userData.us_plantel">
 				<ion-option value="1">Facultad de Telemática</ion-option>
 				<ion-option value="2">Facultad de Psicología</ion-option>
 				<ion-option value="4">Facultad de Mercadotecnia</ion-option>
@@ -51,6 +50,6 @@
 
 			<button ion-button full color="success" (click)="signup()">Registrarse</button>
 
-	</form>
+	
 
 </ion-content>

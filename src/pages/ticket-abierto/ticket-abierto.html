@@ -9,7 +9,7 @@
   <ion-navbar>
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
-        </button>
+      </button>
     <ion-title>ticketAbierto</ion-title>
   </ion-navbar>
 
@@ -17,5 +17,11 @@
 
 
 <ion-content padding>
+
+    <ion-card *ngFor= "let item of userData">
+        <ion-card-content>
+          <p [innerHTML]= "item.ti_asunto"></p>
+        </ion-card-content>
+      </ion-card>
 
 </ion-content>
